@@ -24,19 +24,20 @@ const SchemaDropdown = (props) => {
         <div className='add-schema-container' >
             <div className='add-schema-segment-flex' onClick={popupOpen}>
                 <span className='add-schema-text'>Add schema to segment {openDropdown ? 
-                <i className="fa fa-chevron-up" ></i>:
-                <i className="fa fa-chevron-down" ></i>}</span>
+                <i class="fa fa-chevron-up" ></i>:
+                <i class="fa fa-chevron-down" ></i>}</span>
             </div>
             {openDropdown && <SchemaOption  closeDropdown = {closeDropdown} array= {array} addObject = {addObject}  setOpenDropdown ={setOpenDropdown} />}
         </div>
         
-        <div className='dash-icon'><i className="fa fa-minus" ></i></div>
+        <div className='dash-icon'><i class="fa fa-minus" ></i></div>
     </div>
     
     
     <span className='add-new-schema' onClick={() =>{
         addSchemaObject();
     }}>+ 
+    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
     <a href="#">Add new schema</a></span>
 </> 
   )
